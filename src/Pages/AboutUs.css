@@ -1,0 +1,338 @@
+.bg-aboutus{
+    background-image: url('../Images/AboutUs-Hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+.hero-about-box{
+    width: 50%;
+    height: 60%;
+    background-color: #c6a821b3;
+    margin: 10px 10px 10px 84px;
+}
+.welcome-container-about{
+    margin-top: 105px;
+    margin-left: 90px;
+}
+.welcome-text-about{
+    font-weight: 700;
+    font-size: 62px;
+}
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .bg-aboutus {
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bg-aboutus {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-aboutus {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-aboutus {
+        height: 200px;
+    }
+    .hero-about-box{
+        width: 60%;
+        height: 50%;
+        background-color: #c6a821b3;
+        margin: 10px 0px 0px 22px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .welcome-container {
+        margin-top: 80px;
+        margin-left: 60px;
+    }
+
+    .welcome-text-about {
+        font-size: 60px;
+    }
+
+    .welcome-subtext {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .welcome-container-about {
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+
+    .welcome-text-about {
+        font-size: 50px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .welcome-container-about {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .welcome-text-about {
+        font-size: 40px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .welcome-container-about {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .welcome-text-about {
+        font-size: 22px;
+    }
+
+
+}
+
+.aboutus-content{
+    padding: 90px;
+}
+.inner-container-about h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.inner-container-about p{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+@media (max-width: 576px){
+    .aboutus-content{
+        padding: 30px;
+    }
+    .inner-container-about h1{
+        font-size: 27px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .inner-container-about p{
+        font-size: 23px;
+        font-weight: 400;
+        text-align: justify;
+    }
+}
+
+
+
+/* Our Vision*/
+.our-vision-container{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-right: 80px;
+}
+@media (max-width: 576px){
+    .our-vision-container{
+        margin-right: 15px;
+    }
+}
+.our-vision{
+    padding: 0px 0px 0px 90px;
+}
+.our-vision {
+    position: relative;
+    padding: 20px; /* Optional padding around the container */
+}
+
+.box {
+    background-color: #53524F;
+    color: #EDD150;
+    padding: 25px;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    
+    /* Positioning for overlap */
+    position: absolute;
+    top: -41px;
+    left: 72px;
+}
+
+@media (max-width: 576px){
+    .box{
+        background-color: #53524F;
+        color: #EDD150;
+        padding: 1px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        position: absolute;
+        top: -33px;
+        left: 9px;
+    }
+}
+
+.box-content {
+    background-color: #EDD150;
+    color: #000000;
+    padding: 32px;
+    width: 69%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    /* Adding extra padding to prevent overlap issues */
+    padding-left: 50px; 
+    padding-top: 50px; 
+}
+@media (max-width:576px){
+    .box-content{
+        background-color: #EDD150;
+        color: #000000;
+        padding: 40px;
+        width: 97%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 45px;
+        padding-top: 40px;
+    }
+}
+.box-content h1 {
+    font-size: 22px;
+}
+/* Adding the transformed outline using a pseudo-element */
+.box-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000000;
+    transform: translate(0px, -20px);
+    z-index: 1;
+    width: 97%;
+    margin-left: 14px;
+}
+
+/* Our Mission*/
+.our-mission {
+    padding: 150px 75px;
+}
+
+.our-mission-container {
+    border: 1px solid #545151;
+    padding: 130px 40px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 10px 0px 8px rgb(124 116 116 / 14%);
+}
+
+
+.card-container {
+    height: 380px;
+    background-color: #53524F;
+    color: white;
+}
+
+.card-img-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -64px;
+    left: 84px;
+}
+
+.card-img-container img {
+    width: 45%;
+}
+
+.card-container p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 85px;
+}
+
+.content-para p {
+    font-size: 15px;
+    text-align: justify;
+    padding: 0px 12px;
+}
+
+.content-para {
+    margin-top: -60px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .card {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 60%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .our-mission {
+        padding: 75px 25px;
+    }
+
+    .our-mission-container {
+        padding: 50px 0px;
+        gap: 30px;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        width: 90%; 
+        margin-bottom: 25px;
+        }
+
+    .card-img-container {
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    .card-container p {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+
+    .content-para p {
+        font-size: 14px;
+    }
+
+    .content-para {
+        margin-top: -40px;
+    }
+}

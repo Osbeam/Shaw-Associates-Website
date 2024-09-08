@@ -1,0 +1,86 @@
+.bg-services{
+    margin-bottom: 200px;
+}
+
+.service-head-text p {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.service-head-text {
+    margin-left: 75px;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+.service-head-content {
+    border: 1px solid #C7AB2D;
+    width: 81%;
+    margin-left: 79px;
+    box-shadow: 125px 51px #E7C97D;
+}
+
+.service-head-content p {
+    font-size: 38px;
+    font-weight: 400;
+    padding: 30px 30px 16px 33px;
+}
+@media (max-width:576px) {
+    .service-head-text {
+        margin-left: 29px;
+        margin-top: 12px;
+        margin-bottom: 9px;
+    }
+
+    .service-head-text p {
+        font-size: 27px;
+    }
+    .service-head-content p {
+        font-size: 11px !important;
+        font-weight: 400;
+        padding: 9px !important;
+    }
+    .service-head-content {
+
+        margin-left: 29px !important;
+        box-shadow: 30px 17px #E7C97D !important;
+    }
+}
+
+.service-data-container{
+    margin-left: 84px;
+    margin-right: 78px;
+}
+.data{
+    text-align: justify;
+}
+.data h1{
+    font-size: 41px;
+    color: #BA9800;
+    font-weight: 700;
+}
+.data p{
+    font-size: 23px;
+    font-weight: 400;
+}
+.ul-services li{
+    font-size: 23px;
+}
+@media (max-width:576px){
+.service-data-container{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.bg-services{
+    margin-bottom: 90px;
+}
+.data h1{
+    font-size: 24px;
+}
+.data p{
+    font-size: 15px;
+}
+.ul-services li{
+    font-size: 15px;
+
+}
+}
