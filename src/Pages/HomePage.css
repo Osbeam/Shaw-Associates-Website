@@ -254,6 +254,17 @@
     text-align: justify;
     font-size: 20px;
 }
+@media (max-width:576px){
+    .blog-para p{
+        font-size: 15px;
+    }
+    .Blog-section{
+        margin: 57px 24px;
+    }
+    .main-section{
+        margin-top: 50px;
+    }
+}
 
 .content-item {
     border: 2px solid gray;
@@ -263,6 +274,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .content-item p {

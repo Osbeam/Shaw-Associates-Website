@@ -7,9 +7,25 @@ import About from '../Images/woman-doing-accounting 1.png'
 import img_one from '../Images/Rectangle 47.png'
 import img_two from '../Images/Rectangle 48.png'
 
-
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const handleNavigation = () => {
+        navigate('/blog'); // Navigate to /blog when clicked
+    };
+    const handleNavigationGst = () => {
+        navigate('/blog-gst'); // Navigate to /blog when clicked
+    };
+    const handleNavigationItr = () => {
+        navigate('/blog-itr'); // Navigate to /blog when clicked
+    };
+    const handleNavigationTaxPlan = () => {
+        navigate('/blog-tax-plan'); // Navigate to /blog when clicked
+    };
+
+
     return (
         <>
             <Navbar />
@@ -58,7 +74,7 @@ const HomePage = () => {
                                                     <div class="card-body">
                                                         <h5 class="card-title">Personal Tax Services</h5>
                                                         <p class="card-text">From tax planning to filing, our personalized services ensure you’re getting the best possible outcome for your individual tax situation...From tax planning to filing, our personalized services ensure you’re getting the best possible outcome for your individual tax situation.</p>
-                                                        <a href="your-link-here" class="read-more-link">Read more...</a>
+                                                        <a href="/services" class="read-more-link">Read more...</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -67,7 +83,7 @@ const HomePage = () => {
                                                     <div class="card-body">
                                                         <h5 class="card-title">Corporate Tax Services</h5>
                                                         <p class="card-text">We provide strategic tax planning and compliance support to help your business navigate complex regulations and optimize your tax position...Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations.</p>
-                                                        <a href="your-link-here" class="read-more-link">Read more...</a>
+                                                        <a href="/services" class="read-more-link">Read more...</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -76,7 +92,7 @@ const HomePage = () => {
                                                     <div class="card-body">
                                                         <h5 class="card-title">GST Registration & Filing</h5>
                                                         <p class="card-text">Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations...Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations.current regulations.</p>
-                                                        <a href="your-link-here" class="read-more-link">Read more...</a>
+                                                        <a href="/services" class="read-more-link">Read more...</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -89,7 +105,7 @@ const HomePage = () => {
                                                     <div class="card-body">
                                                         <h5 class="card-title">GST Advisory</h5>
                                                         <p class="card-text">Receive tailored advice on GST regulations and exemptions to enhance your business’s efficiency and compliance...Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations. urrent regulations.urrent regulations.</p>
-                                                        <a href="your-link-here" class="read-more-link">Read more...</a>
+                                                        <a href="/services" class="read-more-link">Read more...</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -98,7 +114,7 @@ const HomePage = () => {
                                                     <div class="card-body">
                                                         <h5 class="card-title">Income Tax Filing & Advisory</h5>
                                                         <p class="card-text">Whether you're a salaried employee, self-employed professional, or business owner, we ensure timely and compliant filing, along with personalized tax planning to optimize your savings...Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations.</p>
-                                                        <a href="your-link-here" class="read-more-link">Read more...</a>
+                                                        <a href="/services" class="read-more-link">Read more...</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -107,7 +123,7 @@ const HomePage = () => {
                                                     <div class="card-body">
                                                         <h5 class="card-title">Card 6</h5>
                                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations.urrent regulations.urrent regulations.urrent regulations.</p>
-                                                        <a href="your-link-here" class="read-more-link">Read more...</a>
+                                                        <a href="/services" class="read-more-link">Read more...</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -202,12 +218,12 @@ const HomePage = () => {
                             <div className="blog-content">
                                 <div className="row">
                                     <div className="col-6">
-                                        <div className="content-item">
+                                        <div className="content-item" onClick={handleNavigation}>
                                             <p>Tax Saving Tips</p>
                                         </div>
                                     </div>
                                     <div className="col-6">
-                                        <div className="content-item">
+                                        <div className="content-item" onClick={handleNavigationGst}>
                                             <p>What is GST and
                                                 Why is it Important?
                                             </p>
@@ -216,12 +232,12 @@ const HomePage = () => {
                                 </div>
                                 <div className="row mt-3">
                                     <div className="col-6">
-                                        <div className="content-item">
+                                        <div className="content-item" onClick={handleNavigationItr}>
                                             <p>IRT Filing</p>
                                         </div>
                                     </div>
                                     <div className="col-6">
-                                        <div className="content-item">
+                                        <div className="content-item" onClick={handleNavigationTaxPlan}>
                                             <p>Tax Planning Tips for Freelancers and Gig Workers</p>
                                         </div>
                                     </div>

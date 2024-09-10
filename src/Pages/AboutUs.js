@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from '../Pages/Footer'
-import Img1 from '../Images/Rectangle 50.png'
+import Img1 from '../Images/our-mission-3.jpeg'
+import Img2 from '../Images/our-mission-1.jpeg'
+import Img3 from '../Images/our-mission-2.jpeg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -11,7 +13,6 @@ const AboutUs = () => {
         <>
             <Navbar />
             <div className="container-fluid">
-
                 <div className="bg-aboutus d-flex flex-column justify-content-left align-items-left text-left">
                     <div className="hero-about-box">
                         <div className="welcome-container-about">
@@ -46,47 +47,71 @@ const AboutUs = () => {
                             <div className="card">
                                 <div className="card-container">
                                     <div className="card-img-container">
-                                    <img src={Img1}/>
+                                        <img src={Img1} />
                                     </div>
-                                    <p>Client-Centric<br/> Service:</p>
+                                    <p>Client-Centric<br /> Service:</p>
                                     <div className="content-para">
                                         <p>To offer tailored financial services
-                                             that meet the unique needs of each
-                                              client, ensuring their financial
-                                               well-being and peace of mind.</p>
+                                            that meet the unique needs of each
+                                            client, ensuring their financial
+                                            well-being and peace of mind.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="card">
                                 <div className="card-container">
                                     <div className="card-img-container">
-                                    <img src={Img1}/>
+                                        <img src={Img2} />
                                     </div>
-                                    <p>Client-Centric<br/> Service:</p>
+                                    <p>Excellence in
+                                        <br /> Execution:</p>
                                     <div className="content-para">
-                                        <p>To offer tailored financial services
-                                             that meet the unique needs of each
-                                              client, ensuring their financial
-                                               well-being and peace of mind.</p>
+                                        <p>To maintain the highest standards of accuracy, integrity, and professionalism in all our services, delivering value that exceeds expectations.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="card">
                                 <div className="card-container">
                                     <div className="card-img-container">
-                                    <img src={Img1}/>
+                                        <img src={Img3} />
                                     </div>
-                                    <p>Client-Centric<br/> Service:</p>
+                                    <p>Continuous
+                                        <br />Learning:</p>
                                     <div className="content-para">
-                                        <p>To offer tailored financial services
-                                             that meet the unique needs of each
-                                              client, ensuring their financial
-                                               well-being and peace of mind.</p>
+                                        <p>To stay ahead of industry trends and regulatory changes, continuously enhancing our knowledge and capabilities to serve our clients better
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <div className="our-mission-container-1">
+                            <div className="card">
+                                <div className="card-container">
+                                    <div className="card-img-container">
+                                        <img src={Img1} />
+                                    </div>
+                                    <p>Client-Centric<br /> Service:</p>
+                                    <div className="content-para">
+                                        <p>To offer tailored financial services
+                                            that meet the unique needs of each
+                                            client, ensuring their financial
+                                            well-being and peace of mind.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-container">
+                                    <div className="card-img-container">
+                                        <img src={Img2} />
+                                    </div>
+                                    <p>Excellence in
+                                        <br /> Execution:</p>
+                                    <div className="content-para">
+                                        <p>To maintain the highest standards of accuracy, integrity, and professionalism in all our services, delivering value that exceeds expectations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Footer />

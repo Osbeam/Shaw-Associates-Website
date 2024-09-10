@@ -128,7 +128,7 @@
         margin-bottom: 30px;
     }
     .inner-container-about p{
-        font-size: 23px;
+        font-size: 16px;
         font-weight: 400;
         text-align: justify;
     }
@@ -153,7 +153,7 @@
 }
 .our-vision {
     position: relative;
-    padding: 20px; /* Optional padding around the container */
+    padding: 92px;
 }
 
 .box {
@@ -234,15 +234,23 @@
 
 /* Our Mission*/
 .our-mission {
-    padding: 150px 75px;
+    padding: 130px 85px;
+    border: 1px solid #545151;
+    margin-top: 150px;
 }
 
 .our-mission-container {
-    border: 1px solid #545151;
-    padding: 130px 40px;
+    padding: 15px 20px;
     display: flex;
     gap: 50px;
     justify-content: center;
+}
+.our-mission-container-1{
+    padding: 19px 220px;
+    display: flex;
+    gap: 46px;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .card {
@@ -261,12 +269,12 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -64px;
-    left: 84px;
+    top: -81px;
+    left: -14px;
 }
 
 .card-img-container img {
-    width: 45%;
+    width: 35%;
 }
 
 .card-container p {
@@ -280,7 +288,7 @@
 .content-para p {
     font-size: 15px;
     text-align: justify;
-    padding: 0px 12px;
+    padding: 0px 41px;
 }
 
 .content-para {
@@ -311,6 +319,12 @@
         flex-direction: column; 
         align-items: center; 
     }
+    .our-mission-container-1 {
+        padding: 0px 0px;
+        gap: 30px;
+        flex-direction: column; 
+        align-items: center; 
+    }
 
     .card {
         width: 90%; 
@@ -335,4 +349,9 @@
     .content-para {
         margin-top: -40px;
     }
+    .card-img-container img{
+        width: 56%;
+    }
 }
+
+

@@ -20,6 +20,18 @@
     background-color: #E7C97D;
     padding: 35px;
 }
+.blog-conclusion-tax-plan{
+    margin-bottom: 90px;
+    margin-top: 70px;
+    background-color: #E7C97D;
+    padding: 35px;
+}
+.blog-conclusion-itr{
+    margin-bottom: 90px;
+    margin-top: 70px;
+    background-color: #E7C97D;
+    padding: 35px;
+}
 @media (max-width:576px){
     .blog-hero-img img{
         width: 213px;
@@ -56,3 +68,13 @@
 .other-blog-text h1{
     padding-top: 75px;
 }
+
+
+
+
+
+
+
+
+
+
