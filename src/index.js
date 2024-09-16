@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import './Pages/AboutUs.css'
-import './Pages/HomePage.css'
+
 import './Pages/Blog.css'
 import './Pages/Services.css'
 

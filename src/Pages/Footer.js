@@ -55,6 +55,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                        <hr style={{color:'white', width:'98%', marginLeft:'2px'}}/>
                         <div className="footer-address">
                             <p>Address : Office No. B-18, DC Road, Above PMS Office, Magarpatta, Hadapsar, Pune,
                                 Maharashtra 411013</p>

@@ -57,6 +57,7 @@
     .blog-container ol{
         list-style: number;
         text-align: justify;
+        margin-left: -15px;
     }
     .hero-blog-box{
         margin-bottom: 113px;

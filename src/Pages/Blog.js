@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import blog1 from '../Images/BLog1.png'
 import Footer from "./Footer";
-import 'antd/dist/reset.css';
+// import 'antd/dist/reset.css';
 
 const Blog = () => {
     return (

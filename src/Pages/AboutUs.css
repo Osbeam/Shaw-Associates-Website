@@ -1,24 +1,28 @@
-.bg-aboutus{
+.bg-aboutus {
     background-image: url('../Images/AboutUs-Hero.png');
     background-size: cover;
     background-position: center;
     height: 600px;
     background-repeat: no-repeat;
 }
-.hero-about-box{
+
+.hero-about-box {
     width: 50%;
     height: 60%;
     background-color: #c6a821b3;
     margin: 10px 10px 10px 84px;
 }
-.welcome-container-about{
+
+.welcome-container-about {
     margin-top: 105px;
     margin-left: 90px;
 }
-.welcome-text-about{
+
+.welcome-text-about {
     font-weight: 700;
     font-size: 62px;
 }
+
 /* Responsive styles */
 @media (max-width: 1200px) {
     .bg-aboutus {
@@ -42,7 +46,8 @@
     .bg-aboutus {
         height: 200px;
     }
-    .hero-about-box{
+
+    .hero-about-box {
         width: 60%;
         height: 50%;
         background-color: #c6a821b3;
@@ -105,29 +110,33 @@
 
 }
 
-.aboutus-content{
+.aboutus-content {
     padding: 90px;
 }
-.inner-container-about h1{
+
+.inner-container-about h1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 50px;
 }
-.inner-container-about p{
+
+.inner-container-about p {
     font-size: 23px;
     font-weight: 400;
 }
 
-@media (max-width: 576px){
-    .aboutus-content{
+@media (max-width: 576px) {
+    .aboutus-content {
         padding: 30px;
     }
-    .inner-container-about h1{
+
+    .inner-container-about h1 {
         font-size: 27px;
         font-weight: 700;
         margin-bottom: 30px;
     }
-    .inner-container-about p{
+
+    .inner-container-about p {
         font-size: 16px;
         font-weight: 400;
         text-align: justify;
@@ -137,23 +146,33 @@
 
 
 /* Our Vision*/
-.our-vision-container{
+.our-vision-container {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
     margin-right: 80px;
 }
-@media (max-width: 576px){
-    .our-vision-container{
+
+@media (max-width: 576px) {
+    .our-vision-container {
         margin-right: 15px;
     }
 }
-.our-vision{
+
+.our-vision {
     padding: 0px 0px 0px 90px;
 }
+
 .our-vision {
     position: relative;
     padding: 92px;
+}
+
+@media (max-width:576px) {
+    .our-vision {
+        position: relative;
+        padding: 18px;
+    }
 }
 
 .box {
@@ -165,15 +184,15 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
-    
+
     /* Positioning for overlap */
     position: absolute;
     top: -41px;
     left: 72px;
 }
 
-@media (max-width: 576px){
-    .box{
+@media (max-width: 576px) {
+    .box {
         background-color: #53524F;
         color: #EDD150;
         padding: 1px;
@@ -196,13 +215,14 @@
     display: flex;
     align-items: center;
     position: relative;
-    
+
     /* Adding extra padding to prevent overlap issues */
-    padding-left: 50px; 
-    padding-top: 50px; 
+    padding-left: 50px;
+    padding-top: 50px;
 }
-@media (max-width:576px){
-    .box-content{
+
+@media (max-width:576px) {
+    .box-content {
         background-color: #EDD150;
         color: #000000;
         padding: 40px;
@@ -214,9 +234,11 @@
         padding-top: 40px;
     }
 }
+
 .box-content h1 {
     font-size: 22px;
 }
+
 /* Adding the transformed outline using a pseudo-element */
 .box-content::before {
     content: "";
@@ -245,7 +267,8 @@
     gap: 50px;
     justify-content: center;
 }
-.our-mission-container-1{
+
+.our-mission-container-1 {
     padding: 19px 220px;
     display: flex;
     gap: 46px;
@@ -298,13 +321,13 @@
 /* Responsive Design */
 @media (max-width: 992px) {
     .card {
-        width: 45%; 
+        width: 45%;
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        width: 60%; 
+        width: 60%;
     }
 }
 
@@ -314,27 +337,28 @@
     }
 
     .our-mission-container {
-        padding: 50px 0px;
+        padding: 0px 0px;
         gap: 30px;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
+
     .our-mission-container-1 {
         padding: 0px 0px;
         gap: 30px;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 90%; 
+        width: 100%;
         margin-bottom: 25px;
-        }
+    }
 
     .card-img-container {
         top: -40px;
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
     }
 
     .card-container p {
@@ -349,9 +373,8 @@
     .content-para {
         margin-top: -40px;
     }
-    .card-img-container img{
+
+    .card-img-container img {
         width: 56%;
     }
 }
-
-

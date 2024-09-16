@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Footer from '../Pages/Footer'
 import Navbar from "../Pages/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import About from '../Images/woman-doing-accounting 1.png'
-import img_one from '../Images/Rectangle 47.png'
-import img_two from '../Images/Rectangle 48.png'
+// import img_one from '../Images/Rectangle 47.png'
+// import img_two from '../Images/Rectangle 48.png'
+import '../Pages/HomePage.css'
+import Testimonials from './TestimonialHomePage'
 
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+    const [clients, setClients] = useState([]);
+
+     useEffect(() => {
+        axios.get('http://localhost:5000/api/client')
+            .then(response => {
+                if (response.data.success) {
+                    setClients(response.data.data);
+                }
+            })
+            .catch(error => {
+                console.error("There was an error fetching the clients!", error);
+            });
+    }, []);
+
     const navigate = useNavigate();
 
     const handleNavigation = () => {
@@ -33,7 +50,7 @@ const HomePage = () => {
                 <div className="bg-custom d-flex flex-column justify-content-left align-items-left text-left">
                     <div className="welcome-container">
                         <h1 className="welcome-text">
-                            WELCOME TO<br />
+                           <span className="welcome-font"> WELCOME TO</span><br />
                             <span className="hero-span">SHAW ASSOCIATES</span>
                         </h1>
                         <p className="welcome-subtext">
@@ -151,7 +168,7 @@ const HomePage = () => {
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Personal Tax Services</h5>
-                                                        <p class="card-text">From tax planning to filing, our personalized services ensure you’re getting the best possible outcome for your individual tax situation...<a href="your-link-here" class="read-more-link">Read more...</a></p>
+                                                        <p class="card-text">From tax planning to filing, our personalized services ensure you’re getting the best possible outcome for your individual tax situation...<a href="/services" class="read-more-link">Read more...</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -163,7 +180,7 @@ const HomePage = () => {
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Corporate Tax Services</h5>
-                                                        <p class="card-text">We provide strategic tax planning and compliance support to help your business navigate complex regulations and optimize your tax position...<a href="your-link-here" class="read-more-link">Read more...</a></p>
+                                                        <p class="card-text">We provide strategic tax planning and compliance support to help your business navigate complex regulations and optimize your tax position...<a href="/services" class="read-more-link">Read more...</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -175,7 +192,7 @@ const HomePage = () => {
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <h5 class="card-title">GST Registration & Filing</h5>
-                                                        <p class="card-text">Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations...<a href="your-link-here" class="read-more-link">Read more...</a></p>
+                                                        <p class="card-text">Get expert assistance with GST registration and accurate filing, ensuring your business stays compliant with current regulations...<a href="/services" class="read-more-link">Read more...</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -233,7 +250,7 @@ const HomePage = () => {
                                 <div className="row mt-3">
                                     <div className="col-6">
                                         <div className="content-item" onClick={handleNavigationItr}>
-                                            <p>IRT Filing</p>
+                                            <p>ITR Filing</p>
                                         </div>
                                     </div>
                                     <div className="col-6">
@@ -254,57 +271,7 @@ const HomePage = () => {
                         </h1>
                     </div>
                     <div>
-                        <div className="client-testimonial">
-                            <div className="client-img">
-                                <img src={img_one} />
-                            </div>
-                            <div className="client-container">
-                                <div className="client-detail">
-                                    <div className="client-name">
-                                        <p>Priya M., Freelance Consultant</p>
-                                    </div>
-                                    <div className="client-rating">
-                                        <div className="stars">
-                                            ★★★★★
-                                        </div>
-                                    </div>
-
-                                    <div className="client-review">
-                                        <p>"Filing my ITR used to be a stressful experience until
-                                            I started working with Shaw Associates. Their team
-                                            made the process seamless and ensured I maximized
-                                            my deductions. I highly recommend their services!"
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="client-testimonial client-testimonial-reversed">
-                            <div className="client-container-reverse">
-                                <div className="client-detail">
-                                    <div className="client-name">
-                                        <p>Priya M., Freelance Consultant</p>
-                                    </div>
-                                    <div className="client-rating">
-                                        <div className="stars">
-                                            ★★★★★
-                                        </div>
-                                    </div>
-
-                                    <div className="client-review">
-                                        <p>"Filing my ITR used to be a stressful experience until
-                                            I started working with Shaw Associates. Their team
-                                            made the process seamless and ensured I maximized
-                                            my deductions. I highly recommend their services!"
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="client-img">
-                                <img src={img_two} alt="Client Image" />
-                            </div>
-                        </div>
+                    <Testimonials clients={clients} />
 
                     </div>
                 </div>
