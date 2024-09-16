@@ -16,7 +16,7 @@ const HomePage = () => {
     const [clients, setClients] = useState([]);
 
      useEffect(() => {
-        axios.get('http://localhost:5000/api/client')
+        axios.get('http://77.37.45.224:3002/api/client')
             .then(response => {
                 if (response.data.success) {
                     setClients(response.data.data);

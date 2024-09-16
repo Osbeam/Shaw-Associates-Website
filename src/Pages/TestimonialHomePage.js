@@ -17,7 +17,7 @@ const Testimonials = ({ clients }) => {
     }, [clients]);
 
     // Base URL for your image server (Adjust this if needed)
-    const baseURL = 'http://localhost:5000/uploads/'; 
+    const baseURL = 'http://77.37.45.224:3002/uploads/'; 
 
     // Ensure current client data is available
     const currentClient = clients[currentIndex] || {};
