@@ -11,8 +11,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 const AboutUs = () => {
     return (
         <>
-            <Navbar />
             <div className="container-fluid">
+            <Navbar />
+
                 <div className="bg-aboutus d-flex flex-column justify-content-left align-items-left text-left">
                     <div className="hero-about-box">
                         <div className="welcome-container-about">

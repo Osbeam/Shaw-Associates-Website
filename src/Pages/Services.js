@@ -6,8 +6,9 @@ import Footer from "./Footer";
 const Services = () => {
     return (
         <>
-            <Navbar />
             <div className="container-fluid">
+            <Navbar />
+
                 <div className="bg-services d-flex flex-column justify-content-left align-items-left text-left">
                     <div className="service-head-text">
                         <p>Our Experties</p>

@@ -45,8 +45,9 @@ const HomePage = () => {
 
     return (
         <>
-            <Navbar />
             <div className="container-fluid">
+            <Navbar />
+
                 <div className="bg-custom d-flex flex-column justify-content-left align-items-left text-left">
                     <div className="welcome-container">
                         <h1 className="welcome-text">

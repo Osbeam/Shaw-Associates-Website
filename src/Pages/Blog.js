@@ -10,8 +10,9 @@ import Slider from './BlogSlider'
 const Blog = () => {
     return (
         <>
-            <Navbar />
             <div className="container-fluid">
+            <Navbar />
+
                 <div className="bg-blog d-flex flex-column justify-content-left align-items-left text-left">
                     <div className="hero-blog-box">
                         <div className="welcome-container-blog">
