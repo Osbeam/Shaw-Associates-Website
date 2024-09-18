@@ -35,10 +35,10 @@ const Footer = () => {
                             <div className="content-footer">
                                 <div className="unorderd-list">
                                     <ul>
-                                        <li><a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="http://localhost:3000/">HOME</a></li>
-                                        <li><a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="http://localhost:3000/aboutus">ABOUT US</a></li>
-                                        <li> <a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="http://localhost:3000/services">SERVICES</a></li>
-                                        <li> <a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="http://localhost:3000/blog">BLOG</a></li>
+                                        <li><a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="/">HOME</a></li>
+                                        <li><a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="/aboutus">ABOUT US</a></li>
+                                        <li> <a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="/services">SERVICES</a></li>
+                                        <li> <a style={{textDecoration:'none', color:'white', cursor:'pointer'}} href="/blog">BLOG</a></li>
                                         <li>CONTACT US</li>
                                     </ul>
                                 </div>
