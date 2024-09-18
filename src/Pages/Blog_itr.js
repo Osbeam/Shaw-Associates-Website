@@ -5,6 +5,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import blog1 from '../Images/Rectangle 65.png'
 import Footer from "./Footer";
 import 'antd/dist/reset.css';
+import Slider from '../Pages/BlogSlider'
+
 
 const Blog_itr = () => {
     return (
@@ -93,6 +95,7 @@ const Blog_itr = () => {
                         </div>
                     </div>
                 </div>
+                <Slider/>
                 <Footer />
             </div>
         </>

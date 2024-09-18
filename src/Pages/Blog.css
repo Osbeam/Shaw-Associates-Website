@@ -1,5 +1,5 @@
 .bg-blog{
-    padding: 50px 0px 0px 50px;
+    padding: 50px 45px 0px 50px;
 }
 .blog-hero-img img{
     width: 900px;
@@ -57,7 +57,7 @@
     .blog-container ol{
         list-style: number;
         text-align: justify;
-        margin-left: -15px;
+        margin-left: -31px;
     }
     .hero-blog-box{
         margin-bottom: 113px;

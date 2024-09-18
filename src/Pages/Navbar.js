@@ -1,11 +1,12 @@
 import React from "react";
 import Logo from '../Images/Shaw-Associates logo.png'
+import './Navbar.css'
 
 
-const Navbar = () =>{
-    return(
+const Navbar = () => {
+    return (
         <>
-                    <nav className="navbar navbar-expand-lg ">
+            <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img className="" style={{ width: '70px' }} src={Logo} />

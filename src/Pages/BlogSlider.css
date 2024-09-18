@@ -1,0 +1,52 @@
+
+/* Container for the entire slider */
+.slider-container-main {
+    margin: 0 auto;
+    width: 96%;
+  }
+  
+  /* Style for each slide */
+  .slide-blog {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 13px;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    height: 333px;
+  }
+  
+  /* Style for the slide content */
+  .slide-container {
+    background-color: #50504D;
+    height: 304px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Highlight the centered slide */
+  .slick-center .slide-container {
+    background-color: #E7C97D; 
+    transform: scale(1.1); 
+  }
+
+  .img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .img-container img{
+    width: 276px;
+  }
+  .slide-text{
+    margin: 15px 15px;
+  }
+@media (max-width:576px){
+    .slide-container {
+      margin-left: 24px;
+      }
+}

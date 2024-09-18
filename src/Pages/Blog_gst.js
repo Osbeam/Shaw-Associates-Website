@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import blog1 from '../Images/Rectangle 64.png'
 import Footer from "./Footer";
+import Slider from '../Pages/BlogSlider'
 // import 'antd/dist/reset.css';
 
 const Blog_gst = () => {
@@ -61,6 +62,7 @@ const Blog_gst = () => {
                         </div>
                     </div>
                 </div>
+                <Slider/>
                 <Footer />
             </div>
         </>

@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import blog1 from '../Images/BLog1.png'
 import Footer from "./Footer";
 // import 'antd/dist/reset.css';
+import Slider from './BlogSlider'
 
 const Blog = () => {
     return (
@@ -66,11 +67,9 @@ const Blog = () => {
                         <div className="other-blog-text">
                             <h1>Other Blogs To Read...</h1>
                         </div>
-                        <div className="carousel-blog">
-
-                        </div>
                     </div>
                 </div>
+                <Slider/>
                 <Footer />
             </div>
         </>

@@ -1,0 +1,35 @@
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff; /* Background color of navbar */
+    position: relative;        /* Ensures proper stacking context */
+    z-index: 1000;             /* Places navbar above other content */
+}
+
+.navbar-collapse {
+    position: absolute; /* Ensures the collapse menu is over content */
+    top: 100%;          /* Place the menu just below the navbar */
+    left: 0;
+    right: 0;
+    background-color: white; /* Set background for visibility */
+    z-index: 999;       /* Ensure dropdown menu is above page content */
+}
+
+.navbar-toggler {
+    border: none;
+    z-index: 1001; /* Ensures the toggle button stays above the content */
+}
+
+.nav-link {
+    color: #000; /* Customize link color */
+    padding: 10px 15px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    z-index: 1001; /* Ensure it’s on top of the content */
+}
+.d-flex {
+    display: flex !important;
+    margin-left: 20px !important;
+  }
+  

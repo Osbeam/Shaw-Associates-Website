@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import blog1 from '../Images/Rectangle 65.png'
 import Footer from "./Footer";
+import Slider from '../Pages/BlogSlider'
+
 // import 'antd/dist/reset.css';
 
 const Blog_tax_plan = () => {
@@ -83,6 +85,7 @@ const Blog_tax_plan = () => {
                         </div>
                     </div>
                 </div>
+                <Slider/>
                 <Footer />
             </div>
         </>
