@@ -35,7 +35,7 @@ const SignUpModal = ({ showModal, toggleModal }) => {
         }
     
         try {
-            const response = await fetch('http://localhost:3002/api/newUser', {
+            const response = await fetch('http://77.37.45.224:3002/api/newUser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

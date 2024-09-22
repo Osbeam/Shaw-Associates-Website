@@ -23,7 +23,7 @@ const SignInModal = ({ showModal, toggleModal, onLoginSuccess }) => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:3002/api/login', {
+            const response = await fetch('http://77.37.45.224:3002/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
