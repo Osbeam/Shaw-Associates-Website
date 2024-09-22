@@ -1,0 +1,62 @@
+/*Signup*/
+
+input.form-control {
+    border: none;
+    border-bottom: 1px solid #F8BD00;
+    border-radius: 0; 
+    box-shadow: none;
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+
+input.form-control:focus {
+    border-bottom-color: #F8BD00;; 
+    outline: none; 
+    box-shadow: none; 
+}
+
+.modelHead{
+    background-color: #E7C97D;
+    border-radius: 0px 0px 125px;
+    padding: 18px 0px 0px 18px;
+}
+
+.modelHead h1{
+    color: #525252;
+    font-size: 41px;
+}
+
+.Submit-btn{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.Submit-btn button{
+    border: 0px solid gray;
+    padding: 8px 30px 8px 30px;
+    border-radius: 5px;
+    background-color: #E7C97D;
+    color: #525252;
+    font-size: 17px;
+    font-weight: 500;
+}
+.log-text{
+    display: flex;
+    justify-content: center;
+}
+.log-text p{
+    color: #C7AB2D;
+}
+.password-input {
+    position: relative;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c757d;
+}
+

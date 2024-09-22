@@ -190,7 +190,7 @@
     color:#FFFFFF
 }
 .read-more-link{
-    color: #FFFFFF;
+    color: #ffff00bf
 }
 
 @media (min-width:576px) {
@@ -271,6 +271,11 @@
     font-size: 19px;
     font-weight: 700;
     margin-bottom: 0 !important;
+    text-decoration: none;
+    color: #101010;
+}
+.content-item a{
+    text-decoration: none;
 }
 
 /* Client Review section*/

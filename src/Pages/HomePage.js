@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
 const HomePage = () => {
     const [clients, setClients] = useState([]);
 
-     useEffect(() => {
+    useEffect(() => {
         axios.get('http://77.37.45.224:3002/api/client')
             .then(response => {
                 if (response.data.success) {
@@ -27,31 +27,31 @@ const HomePage = () => {
             });
     }, []);
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleNavigation = () => {
-        navigate('/blog'); // Navigate to /blog when clicked
-    };
-    const handleNavigationGst = () => {
-        navigate('/blog-gst'); // Navigate to /blog when clicked
-    };
-    const handleNavigationItr = () => {
-        navigate('/blog-itr'); // Navigate to /blog when clicked
-    };
-    const handleNavigationTaxPlan = () => {
-        navigate('/blog-tax-plan'); // Navigate to /blog when clicked
-    };
+    // const handleNavigation = () => {
+    //     navigate('/blog'); // Navigate to /blog when clicked
+    // };
+    // const handleNavigationGst = () => {
+    //     navigate('/blog-gst'); // Navigate to /blog when clicked
+    // };
+    // const handleNavigationItr = () => {
+    //     navigate('/blog-itr'); // Navigate to /blog when clicked
+    // };
+    // const handleNavigationTaxPlan = () => {
+    //     navigate('/blog-tax-plan'); // Navigate to /blog when clicked
+    // };
 
 
     return (
         <>
             <div className="container-fluid">
-            <Navbar />
+                <Navbar />
 
                 <div className="bg-custom d-flex flex-column justify-content-left align-items-left text-left">
                     <div className="welcome-container">
                         <h1 className="welcome-text">
-                           <span className="welcome-font"> WELCOME TO</span><br />
+                            <span className="welcome-font"> WELCOME TO</span><br />
                             <span className="hero-span">SHAW ASSOCIATES</span>
                         </h1>
                         <p className="welcome-subtext">
@@ -236,27 +236,35 @@ const HomePage = () => {
                             <div className="blog-content">
                                 <div className="row">
                                     <div className="col-6">
-                                        <div className="content-item" onClick={handleNavigation}>
-                                            <p>Tax Saving Tips</p>
+                                        <div className="content-item" >
+                                            <a href="/blog">
+                                                <p>Tax Saving Tips</p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="col-6">
-                                        <div className="content-item" onClick={handleNavigationGst}>
-                                            <p>What is GST and
-                                                Why is it Important?
-                                            </p>
+                                        <div className="content-item" >
+                                            <a href="/blog-gst">
+                                                <p>What is GST and
+                                                    Why is it Important?
+                                                </p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row mt-3">
                                     <div className="col-6">
-                                        <div className="content-item" onClick={handleNavigationItr}>
-                                            <p>ITR Filing</p>
+                                        <div className="content-item" >
+                                            <a href="/blog-itr">
+                                                <p>ITR Filing</p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="col-6">
-                                        <div className="content-item" onClick={handleNavigationTaxPlan}>
-                                            <p>Tax Planning Tips for Freelancers and Gig Workers</p>
+                                        <div className="content-item" >
+                                            <a href="/blog-tax-plan">
+                                                <p>Tax Planning Tips for Freelancers and Gig Workers</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -272,7 +280,7 @@ const HomePage = () => {
                         </h1>
                     </div>
                     <div>
-                    <Testimonials clients={clients} />
+                        <Testimonials clients={clients} />
 
                     </div>
                 </div>

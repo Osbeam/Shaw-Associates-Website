@@ -59,11 +59,11 @@
     font-weight: 700;
 }
 .data p{
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 400;
 }
 .ul-services li{
-    font-size: 23px;
+    font-size: 21px;
 }
 @media (max-width:576px){
 .service-data-container{
