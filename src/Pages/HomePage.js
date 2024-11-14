@@ -281,7 +281,6 @@ const HomePage = () => {
                     </div>
                     <div>
                         <Testimonials clients={clients} />
-
                     </div>
                 </div>
 

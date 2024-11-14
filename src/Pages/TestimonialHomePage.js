@@ -47,7 +47,7 @@ const Testimonials = ({ clients }) => {
                         alt="Client" 
                     />
                 </div>
-                {clients.length > 0 ? (
+         
                     <div className="client-container fade-in">
                         <div className="client-detail">
                             <div className="client-name">
@@ -63,9 +63,7 @@ const Testimonials = ({ clients }) => {
                             </div>
                         </div>
                     </div>
-                ) : (
-                    <p>Loading client testimonials...</p>
-                )}
+      
             </div>
 
             {/* Second Testimonial */}
